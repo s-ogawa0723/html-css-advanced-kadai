@@ -665,7 +665,7 @@ footer {
   スマートフォン用のスタイル
  =====================*/
 @media screen and (max-width: 767px) {
-.cell /* PC用ナビゲーション非表示 */
+/* PC用ナビゲーション非表示 */
  #nav-pc {
   display: none;
  }  
@@ -823,7 +823,7 @@ h3 {
   margin: 0;
  }
 
- /* 説明文の枠 */TODO:relativeの意味を確認
+ /* 説明文の枠 */
  .product-explain {
   position: relative;
   margin: 0;
