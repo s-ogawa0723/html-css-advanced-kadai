@@ -1,0 +1,212 @@
+:root {
+  --brand-green: #009A44;
+  --status-done: #2e9e3f;
+  --status-draft: #f0a500;
+  --status-none: #e2231a;
+  --border-color: #cfd4d3;
+  --header-bg: #eef2f1;
+  --text-main: #2b2b2b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px 16px 60px;
+  background: #f5f6f6;
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+.note {
+  max-width: 1000px;
+  margin: 0 auto 12px;
+  color: #b3261e;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 24px 24px 40px;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.page-title {
+  background: var(--brand-green);
+  color: #fff;
+  text-align: center;
+  font-size: 1.3rem;
+  letter-spacing: 0.2em;
+  padding: 14px 10px;
+  margin: 0 0 28px;
+  border-radius: 2px;
+}
+
+.reg-section {
+  margin-bottom: 36px;
+}
+
+.reg-section:last-child {
+  margin-bottom: 0;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.05rem;
+  margin: 0 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--brand-green);
+}
+
+.icon svg {
+  fill: var(--brand-green);
+  display: block;
+}
+
+.icon-group svg {
+  width: 44px;
+  height: 28px;
+}
+
+.icon-single svg {
+  width: 20px;
+  height: 26px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.reg-table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.reg-table th,
+.reg-table td {
+  border: 1px solid var(--border-color);
+  padding: 10px 8px;
+  vertical-align: middle;
+}
+
+.reg-table thead th {
+  background: var(--header-bg);
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.reg-table .num {
+  text-align: center;
+}
+
+.reg-table .content-name {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.reg-table .deadline {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.reg-table .detail {
+  text-align: left;
+  font-size: 0.82rem;
+}
+
+.reg-table .price {
+  text-align: right;
+  white-space: nowrap;
+  padding-right: 14px;
+}
+
+.btn-edit {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  padding: 4px 14px;
+  border: 1px solid var(--brand-green);
+  border-radius: 999px;
+  color: var(--brand-green);
+  font-size: 0.78rem;
+  font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.btn-edit:hover {
+  background: var(--brand-green);
+  color: #fff;
+}
+
+.status {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  min-width: 5.5em;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.status-done {
+  background: var(--status-done);
+}
+
+.status-draft {
+  background: var(--status-draft);
+}
+
+.status-none {
+  background: var(--status-none);
+}
+
+.reg-table tfoot td {
+  text-align: right;
+  font-weight: bold;
+  background: var(--header-bg);
+}
+
+.reg-table tfoot .price {
+  background: #fff;
+}
+
+.reg-table tfoot .grand td,
+.reg-table tfoot .grand.price {
+  background: #e2eee4;
+}
+
+.reg-table tfoot .grand td {
+  font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 16px 12px 28px;
+  }
+
+  .page-title {
+    font-size: 1.05rem;
+    letter-spacing: 0.1em;
+  }
+
+  .section-heading {
+    font-size: 0.95rem;
+  }
+}
